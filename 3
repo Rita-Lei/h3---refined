@@ -1,0 +1,11 @@
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+function draw() { 
+  background(255);
+	for (var y = 0; y <= height/2; y = y + 10) {
+		line(200-y,y,200+y,y); 
+		line(200-y,400-y,200+y,400-y);
+	}
+}
